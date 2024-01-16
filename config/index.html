@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>服务配置 | MapGIS IGServer</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/igs-docs/favicon.ico">
+    <meta name="description" content="基于跨平台内核的高性能GIS服务器软件平台">
+    <meta name="keywords" content="mapgis,开源,免费,mapgis igserver,MapGIS-IGServer">
+    
+    <link rel="preload" href="/igs-docs/assets/css/0.styles.2a4dff60.css" as="style"><link rel="preload" href="/igs-docs/assets/js/app.912e8c89.js" as="script"><link rel="preload" href="/igs-docs/assets/js/2.fefd1d8a.js" as="script"><link rel="preload" href="/igs-docs/assets/js/17.742f48a4.js" as="script"><link rel="prefetch" href="/igs-docs/assets/js/10.23aa544d.js"><link rel="prefetch" href="/igs-docs/assets/js/11.c78bcdfd.js"><link rel="prefetch" href="/igs-docs/assets/js/12.96bcc107.js"><link rel="prefetch" href="/igs-docs/assets/js/13.47dfca64.js"><link rel="prefetch" href="/igs-docs/assets/js/14.2b4991ae.js"><link rel="prefetch" href="/igs-docs/assets/js/15.e0b5818f.js"><link rel="prefetch" href="/igs-docs/assets/js/16.dce9faa0.js"><link rel="prefetch" href="/igs-docs/assets/js/18.4922732b.js"><link rel="prefetch" href="/igs-docs/assets/js/19.806b3800.js"><link rel="prefetch" href="/igs-docs/assets/js/20.24bf0010.js"><link rel="prefetch" href="/igs-docs/assets/js/21.df49518a.js"><link rel="prefetch" href="/igs-docs/assets/js/22.363d0fc2.js"><link rel="prefetch" href="/igs-docs/assets/js/23.d6786f13.js"><link rel="prefetch" href="/igs-docs/assets/js/24.88440aab.js"><link rel="prefetch" href="/igs-docs/assets/js/25.468848a0.js"><link rel="prefetch" href="/igs-docs/assets/js/26.edd4089b.js"><link rel="prefetch" href="/igs-docs/assets/js/27.84363597.js"><link rel="prefetch" href="/igs-docs/assets/js/28.f34badcc.js"><link rel="prefetch" href="/igs-docs/assets/js/29.910d4647.js"><link rel="prefetch" href="/igs-docs/assets/js/3.408452cb.js"><link rel="prefetch" href="/igs-docs/assets/js/30.7ea9f6a7.js"><link rel="prefetch" href="/igs-docs/assets/js/31.16e4da06.js"><link rel="prefetch" href="/igs-docs/assets/js/32.e47cc258.js"><link rel="prefetch" href="/igs-docs/assets/js/33.437a2e30.js"><link rel="prefetch" href="/igs-docs/assets/js/34.25abefde.js"><link rel="prefetch" href="/igs-docs/assets/js/35.06acc103.js"><link rel="prefetch" href="/igs-docs/assets/js/36.ac38cd32.js"><link rel="prefetch" href="/igs-docs/assets/js/37.7a82c223.js"><link rel="prefetch" href="/igs-docs/assets/js/38.579bd9c3.js"><link rel="prefetch" href="/igs-docs/assets/js/39.a2c30be2.js"><link rel="prefetch" href="/igs-docs/assets/js/4.44a3b64f.js"><link rel="prefetch" href="/igs-docs/assets/js/40.60105c1e.js"><link rel="prefetch" href="/igs-docs/assets/js/41.f506cf4b.js"><link rel="prefetch" href="/igs-docs/assets/js/42.8e8fdc48.js"><link rel="prefetch" href="/igs-docs/assets/js/43.94f62523.js"><link rel="prefetch" href="/igs-docs/assets/js/44.1fb2187c.js"><link rel="prefetch" href="/igs-docs/assets/js/45.aecebe2a.js"><link rel="prefetch" href="/igs-docs/assets/js/46.c39e1620.js"><link rel="prefetch" href="/igs-docs/assets/js/47.21300f6a.js"><link rel="prefetch" href="/igs-docs/assets/js/48.fb757d5e.js"><link rel="prefetch" href="/igs-docs/assets/js/49.eb23d999.js"><link rel="prefetch" href="/igs-docs/assets/js/5.74f59729.js"><link rel="prefetch" href="/igs-docs/assets/js/6.3586715c.js"><link rel="prefetch" href="/igs-docs/assets/js/7.677656df.js"><link rel="prefetch" href="/igs-docs/assets/js/8.811bb56a.js"><link rel="prefetch" href="/igs-docs/assets/js/9.5d9b2819.js">
+    <link rel="stylesheet" href="/igs-docs/assets/css/0.styles.2a4dff60.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/igs-docs/" class="home-link router-link-active"><img src="/igs-docs/logo.svg" alt="MapGIS IGServer" class="logo"> <span class="site-name can-hide">MapGIS IGServer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/igs-docs/services/" class="nav-link">
+  REST服务
+</a></div><div class="nav-item"><a href="/igs-docs/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  管理与配置
+</a></div><div class="nav-item"><a href="/igs-docs/guide/dev/introduction.html" class="nav-link">
+  开发指南
+</a></div><div class="nav-item"><a href="/igs-docs/articles/" class="nav-link">
+  文章
+</a></div><div class="nav-item"><a href="http://192.168.200.88/webgis/igserver/mapgis-igserver" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitLab
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/igs-docs/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/igs-docs/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-igserver" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/igs-docs/services/" class="nav-link">
+  REST服务
+</a></div><div class="nav-item"><a href="/igs-docs/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  管理与配置
+</a></div><div class="nav-item"><a href="/igs-docs/guide/dev/introduction.html" class="nav-link">
+  开发指南
+</a></div><div class="nav-item"><a href="/igs-docs/articles/" class="nav-link">
+  文章
+</a></div><div class="nav-item"><a href="http://192.168.200.88/webgis/igserver/mapgis-igserver" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitLab
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/igs-docs/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/igs-docs/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-igserver" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>管理与配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/igs-docs/config/" aria-current="page" class="active sidebar-link">服务配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/igs-docs/config/#开启https" class="sidebar-link">开启https</a></li><li class="sidebar-sub-header"><a href="/igs-docs/config/#定时重启" class="sidebar-link">定时重启</a></li><li class="sidebar-sub-header"><a href="/igs-docs/config/#其他配置" class="sidebar-link">其他配置</a></li></ul></li><li><a href="/igs-docs/config/manager.html" class="sidebar-link">服务管理</a></li><li><a href="/igs-docs/config/使用指南.html" class="sidebar-link">使用指南</a></li><li><a href="/igs-docs/config/migration.html" class="sidebar-link">服务迁移</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="服务配置"><a href="#服务配置" class="header-anchor">#</a> 服务配置</h1> <h2 id="开启https"><a href="#开启https" class="header-anchor">#</a> 开启https</h2> <p>修改igserver_for_java/config/application.properties，重启生效</p> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token key attr-name">server.ssl.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment">#秘钥文件的路径</span>
+<span class="token key attr-name">server.ssl.key-store</span><span class="token punctuation">=</span><span class="token value attr-value">igs/https/ldkeystore.p12</span>
+<span class="token comment">#秘钥密码</span>
+<span class="token key attr-name">server.ssl.key-store-password</span><span class="token punctuation">=</span><span class="token value attr-value">123456</span>
+<span class="token comment">#秘钥类型</span>
+<span class="token key attr-name">server.ssl.key-store-type</span><span class="token punctuation">=</span><span class="token value attr-value">PKCS12</span>
+<span class="token comment">#秘钥别名</span>
+<span class="token key attr-name">server.ssl.key-alias</span><span class="token punctuation">=</span><span class="token value attr-value">undertow</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="定时重启"><a href="#定时重启" class="header-anchor">#</a> 定时重启</h2> <p>修改igserver_for_java/config/application.properties，重启生效</p> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment">#通过keepalived实现的定时重启，重启时间</span>
+<span class="token key attr-name">igs.restartScheduleTask.startTime</span><span class="token punctuation">=</span><span class="token value attr-value">02:00:00</span>
+<span class="token comment"># 重启周期 h小时 d天</span>
+<span class="token key attr-name">igs.restartScheduleTask.period</span><span class="token punctuation">=</span><span class="token value attr-value">1d</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="其他配置"><a href="#其他配置" class="header-anchor">#</a> 其他配置</h2> <p>修改igserver_for_java/config/application.properties，重启生效</p> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment"># 在启动其他进程时是否重定向进程输出到日志，仅用于调试（因为日志文件没法清理，可能无限增长）</span>
+<span class="token key attr-name">igs.processRedirectOutputEnabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment"># 带状态资源内存缓存最大的空闲时间，超过该时间清理缓存；默认4小时</span>
+<span class="token key attr-name">igs.tempResourceMaxIdleSeconds</span><span class="token punctuation">=</span>
+<span class="token comment">#是否开启快显1.0地图预加载,默认true</span>
+<span class="token key attr-name">igs.preloadMapsForHiRenderV1Enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment">#是否开启瓦片预加载,默认false</span>
+<span class="token key attr-name">igs.preloadTilesEnabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment">#要素查询默认的缓冲半径（米）</span>
+<span class="token key attr-name">igs.defaultDistanceMeterForQueryFeature</span><span class="token punctuation">=</span><span class="token value attr-value">0.1</span>
+<span class="token comment">#使用java客户端在M3d服务中来处理M3D 2.0数据，包括mongo和本地文档，不使用内核</span>
+<span class="token key attr-name">igs.javaClientForM3dServerEnabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment">#瓦片服务客户端缓存时长，默认24小时</span>
+<span class="token key attr-name">igs.tileCacheControlSeconds</span><span class="token punctuation">=</span>
+<span class="token comment">#m3d服务客户端缓存时长，默认一个月</span>
+<span class="token key attr-name">igs.m3dCacheControlSeconds</span><span class="token punctuation">=</span>
+<span class="token comment"># keepalive的igs探针参数</span>
+<span class="token key attr-name">igs.keepalived.igsProb.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment"># 初始等待时间</span>
+<span class="token key attr-name">igs.keepalived.igsProb.initialDelaySeconds</span><span class="token punctuation">=</span><span class="token value attr-value">120</span>
+<span class="token comment"># 请求超时时间</span>
+<span class="token key attr-name">igs.keepalived.igsProb.timeoutSeconds</span><span class="token punctuation">=</span><span class="token value attr-value">10</span>
+<span class="token comment"># 成功次数阈值</span>
+<span class="token key attr-name">igs.keepalived.igsProb.successThreshold</span><span class="token punctuation">=</span><span class="token value attr-value">1</span>
+<span class="token comment"># 失败次数阈值</span>
+<span class="token key attr-name">igs.keepalived.igsProb.failureThreshold</span><span class="token punctuation">=</span><span class="token value attr-value">6</span>
+<span class="token comment"># 探针执行周期</span>
+<span class="token key attr-name">igs.keepalived.igsProb.periodSeconds</span><span class="token punctuation">=</span><span class="token value attr-value">10</span>
+<span class="token comment"># keepalive的dcs探针参数</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment"># 初始等待时间</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.initialDelaySeconds</span><span class="token punctuation">=</span><span class="token value attr-value">60</span>
+<span class="token comment"># 请求超时时间</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.timeoutSeconds</span><span class="token punctuation">=</span><span class="token value attr-value">10</span>
+<span class="token comment"># 成功次数阈值</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.successThreshold</span><span class="token punctuation">=</span><span class="token value attr-value">1</span>
+<span class="token comment"># 失败次数阈值</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.failureThreshold</span><span class="token punctuation">=</span><span class="token value attr-value">6</span>
+<span class="token comment"># 探针执行周期</span>
+<span class="token key attr-name">igs.keepalived.dcsProb.periodSeconds</span><span class="token punctuation">=</span><span class="token value attr-value">10</span>
+<span class="token comment"># 关闭swagger的api接口</span>
+<span class="token key attr-name">springdoc.api-docs.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment"># 关闭swagger的ui</span>
+<span class="token key attr-name">springdoc.swagger-ui.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment"># 关闭首页的静态api html链接</span>
+<span class="token key attr-name">apiDoc.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment"># 关闭首页的swagger链接</span>
+<span class="token key attr-name">swagger.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment"># 首页标题、描述自定义</span>
+<span class="token key attr-name">manager-frontend.dashboard.title</span><span class="token punctuation">=</span>
+<span class="token key attr-name">manager-frontend.dashboard.description</span><span class="token punctuation">=</span>
+<span class="token comment"># 开启gc日志</span>
+<span class="token key attr-name">igs.gcLogEnabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment">#dcs dubbo起始端口</span>
+<span class="token key attr-name">dcs.dubboPort</span><span class="token punctuation">=</span><span class="token value attr-value">50080</span>
+<span class="token comment">#快显并发裁图任务的最大个数</span>
+<span class="token key attr-name">dcs.hiRenderMaxConcurrentTaskCount</span><span class="token punctuation">=</span><span class="token value attr-value">4</span>
+<span class="token comment">#工作量dubbo起始端口</span>
+<span class="token key attr-name">workflow.dubboPort</span><span class="token punctuation">=</span><span class="token value attr-value">50280</span>
+<span class="token comment">#工作流的最大进程数，默认值为宿主机核心数与4的较大者</span>
+<span class="token key attr-name">workflow.maxProcessCount</span><span class="token punctuation">=</span>
+<span class="token comment"># 单任务单进程模式，一个任务对应一个进程，执行完后进程销毁</span>
+<span class="token key attr-name">workflow.oneProcessToOneTaskModeEnabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment">#日志级别，注意com.zondy.mapgis包受igs日志配置影响</span>
+<span class="token key attr-name">logging.level.root</span><span class="token punctuation">=</span><span class="token value attr-value">info</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/igs-docs/edit/master/docs/config/README.md" target="_blank" rel="noopener noreferrer">在 GitLab 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2024/1/9 17:48:17</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/igs-docs/config/manager.html">
+        服务管理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-5f98aac3><div class="my-popup-container" data-v-5f98aac3><div class="my-popup-exit" data-v-5f98aac3></div> <img src="" alt data-v-5f98aac3></div></div></div></div>
+    <script src="/igs-docs/assets/js/app.912e8c89.js" defer></script><script src="/igs-docs/assets/js/2.fefd1d8a.js" defer></script><script src="/igs-docs/assets/js/17.742f48a4.js" defer></script>
+  </body>
+</html>
